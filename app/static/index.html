@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fish Behavior Detection — Anomaly Meanings</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Fish Behavior Detection</h1>
+      <p class="subtitle">Detect and understand abnormal fish behaviors in aquaculture</p>
+    </header>
+
+    <main class="main">
+      <section class="upload-section">
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="fileInput" accept="image/*" hidden />
+          <p>Drop an image here or <button type="button" class="btn btn-primary" id="browseBtn">Browse</button></p>
+        </div>
+      </section>
+
+      <section class="results-section" id="resultsSection" hidden>
+        <div class="panels">
+          <div class="panel image-panel">
+            <h2>Detection result</h2>
+            <div class="canvas-wrap">
+              <img id="previewImg" alt="Preview" />
+              <canvas id="overlay" aria-hidden="true"></canvas>
+            </div>
+            <p class="summary" id="summary"></p>
+          </div>
+
+          <div class="panel meanings-panel">
+            <h2>Behavior meanings</h2>
+            <p class="panel-desc">When anomalous conditions are detected, each behavior type has a specific meaning:</p>
+            <div class="meanings-list" id="meaningsList"></div>
+            <div class="legend" id="legend"></div>
+          </div>
+        </div>
+      </section>
+        <section class="loading" id="loading" hidden>
+          <div class="spinner"></div>
+          <p>Analyzing image…</p>
+        </section>
+      <section class="error" id="error" hidden>
+        <p id="errorMessage"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>DDEYOLOv9 — Abnormal fish behavior detection</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
