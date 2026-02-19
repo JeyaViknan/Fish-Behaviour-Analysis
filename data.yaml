@@ -1,0 +1,11 @@
+path: /Users/jeyaviknan/Downloads/Anomalous-fish (1)
+train: /Users/jeyaviknan/Downloads/Anomalous-fish (1)/splits/train.txt
+val: /Users/jeyaviknan/Downloads/Anomalous-fish (1)/splits/val.txt
+test: /Users/jeyaviknan/Downloads/Anomalous-fish (1)/splits/val.txt
+nc: 5
+names:
+- Normal-Fish
+- PH abnormal-Fish
+- Low temperature-Fish
+- High temperature-Fish
+- Hypoxia-Fish
